@@ -1,0 +1,33 @@
+name = "trailkit"
+client_id = "93760b804a6d03e502d8c548a9717473"
+application_url = "https://feels-packed-cowboy-witch.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "trailkit.myshopify.com"
+
+[access_scopes]
+scopes = "read_themes"
+
+[auth]
+redirect_urls = [
+  "https://feels-packed-cowboy-witch.trycloudflare.com/auth/callback",
+  "https://feels-packed-cowboy-witch.trycloudflare.com/auth/shopify/callback",
+  "https://feels-packed-cowboy-witch.trycloudflare.com/api/auth/callback",
+]
+
+[webhooks]
+api_version = "2025-01"
+
+  [[webhooks.subscriptions]]
+  topics = ["app/uninstalled"]
+  uri = "/webhooks"
+
+[app_proxy]
+url = "https://feels-packed-cowboy-witch.trycloudflare.com/api/proxy"
+subpath = "trailkit"
+prefix = "apps"
+
+[pos]
+embedded = false

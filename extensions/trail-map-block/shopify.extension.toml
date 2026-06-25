@@ -1,0 +1,7 @@
+api_version = "2025-01"
+
+[[extensions]]
+type = "theme"
+name = "Trail Map"
+handle = "trail-map-block"
+uid = "f64f22c5-fb8e-3801-18e4-9aefeeddc1ec"

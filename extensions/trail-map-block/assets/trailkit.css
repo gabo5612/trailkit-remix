@@ -1,0 +1,39 @@
+/* TrailKit — Theme App Extension Styles */
+
+.tk-trail-map {
+  width: 100%;
+  position: relative;
+  background: #f1f5f9;
+}
+
+/* Leaflet overrides scoped to TrailKit containers */
+.tk-trail-map .leaflet-container {
+  font-family: inherit;
+}
+
+.tk-trail-map .leaflet-popup-content-wrapper {
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.tk-trail-map .leaflet-popup-content {
+  margin: 10px 14px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Custom map pin (divIcon) */
+.tk-map-pin {
+  background: transparent !important;
+  border: none !important;
+}
+
+.tk-map-pin span {
+  display: block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #6366f1;
+  border: 2px solid #ffffff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
